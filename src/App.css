@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  margin: auto;
+}
+
+.card {
+    @apply max-w-sm rounded-lg overflow-hidden shadow-lg bg-white;
+}
+
+.card-img {
+    @apply w-full h-48 object-cover;
+}
+
+.card-body {
+    @apply p-4;
+}
+
+.card-title {
+    @apply text-xl font-semibold mb-2;
+}
+
+.card-text {
+    @apply text-gray-700 text-base;
+}
+
+.card-button {
+    @apply mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out;
+}
+
+.display {
+  @apply bg-gray-100 text-right text-2xl p-4 border-b border-gray-300;
+  height: 60px; /* Set a fixed height for the display */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Right-align the text */
+}
+
